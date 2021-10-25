@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
     <title>JS Testing</title>
 </head>
 
 <body>
-    <form>
-        <label for="name">Name</label>
-        <br>
-        <input type="text" id="name">
-        <br>
-        <br>
-        <label for="name">Age</label>
-        <br>
-        <input type="text" id="age">
-        <br>
-        <br>
-        <button type="submit">Add User</button>
-    </form>
-
+    <section class="control-panel">
+        <div class="input-container">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div class="input-container">
+            <label for="age">Age</label>
+            <input type="number" id="age">
+        </div>
+        <button id="btnAddUser" class="button">Add User</button>
+    </section>
+    <hr>
+    <section class="user-output">
+        <ul class="user-list"></ul>
+    </section>
 </body>
 <script type="text/javascript" src="app.js"></script>
 
